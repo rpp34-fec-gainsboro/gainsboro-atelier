@@ -6,6 +6,7 @@ const compression = require('compression')
 const bodyParser = require("body-parser");
 const {token} = require("../config.js");
 const uploadImages = require("../imageAPI/imageAPI.js");
+const cors = require('cors');
 
 const upload = multer({storage: multer.diskStorage({})});
 const qaRouter = require('./qa');
@@ -20,6 +21,7 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, "/../client/dist")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
 
 var options = {
   headers: {
@@ -103,7 +105,7 @@ app.get('/products/:product_id/related', (req, res) => {
   })
   .then(defaultStyles => {
     var relatedProducts = defaultStyles.map(defaultStyle => {
-      var metaURL = `${apiHost}/reviews/meta?product_id=${defaultStyle.id}`;
+      var metaURL = `http://localhost:8000/reviews/meta?product_id=${defaultStyle.id}`;
       return axios.get(metaURL, options)
       .then(({data}) => {
         var ratings = data.ratings;
@@ -119,7 +121,7 @@ app.get('/products/:product_id/related', (req, res) => {
 
 app.get('/reviews', (req, res) => {
   var {product_id, sort, count} = req.query;
-  var url = `${apiHost}/reviews?product_id=${product_id}&sort=${sort}&count=${count}`;
+  var url = `http://localhost:8000/reviews?product_id=${product_id}&sort=${sort}&count=${count}`;
   axios.get(url, options)
   .then(data => {
     res.send(data.data.results)
@@ -129,7 +131,7 @@ app.get('/reviews', (req, res) => {
 
 
 app.put('/reviews/:review_id/helpful', (req, res) => {
-  var url = `${apiHost}/reviews/${req.params["review_id"]}/helpful`;
+  var url = `http://localhost:8000/reviews/${req.params["review_id"]}/helpful`;
   axios.put(url, {}, options)
   .then(data => {
     res.sendStatus(data.status);
@@ -138,12 +140,15 @@ app.put('/reviews/:review_id/helpful', (req, res) => {
 })
 
 app.get('/reviews/meta/:product_id', (req, res) => {
-  var url = `${apiHost}/reviews/meta?product_id=${req.params.product_id}`;
+  var url = `http://localhost:8000/reviews/meta?product_id=${req.params.product_id}`;
   axios.get(url, options)
   .then(data => {
     res.send(data.data)
   })
-  .catch(err => res.sendStatus(500))
+  .catch(err => {
+    console.log('err: ', err);
+    res.status(500).end();
+  })
 })
 
 app.post('/reviews', upload.array("images"), (req, res) => {
@@ -168,7 +173,7 @@ app.post('/reviews', upload.array("images"), (req, res) => {
         'content-type': 'application/json'
       }
     }
-    return axios.post(`${apiHost}/reviews`, formData, config)
+    return axios.post(`http://localhost:8000/reviews`, formData, config)
   })
   .then(data => {
     res.send(data.data)
@@ -179,7 +184,7 @@ app.post('/reviews', upload.array("images"), (req, res) => {
 })
 
 app.put('/reviews/:review_id/report', (req, res) => {
-  var url = `${apiHost}/reviews/${req.params["review_id"]}/report`;
+  var url = `http://localhost:8000/reviews/${req.params["review_id"]}/report`;
   axios.put(url, {}, options)
   .then(data => {
     res.sendStatus(data.status);
