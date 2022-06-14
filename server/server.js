@@ -6,7 +6,6 @@ const compression = require('compression')
 const bodyParser = require("body-parser");
 const {token} = require("../config.js");
 const uploadImages = require("../imageAPI/imageAPI.js");
-const cors = require('cors');
 
 const upload = multer({storage: multer.diskStorage({})});
 const qaRouter = require('./qa');
@@ -21,7 +20,6 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, "/../client/dist")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(cors());
 
 var options = {
   headers: {
