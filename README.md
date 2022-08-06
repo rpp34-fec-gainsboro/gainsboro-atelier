@@ -30,7 +30,7 @@ It has 2 main parts:
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected. It has 5 main parts:
 1. Reviews List: 
   - It displays a list of all the reviews that have been submitted for the product being viewed. By default, the list only display 2 product tiles at a time. By clicking "More Reviews" button to load more reviews. 
-  - Each review tile displays the following information: start rating, date, summary, body, 
+  - Each review tile displays the following information: start rating, reviewer name, date, summary, body, 
 2. Write new review: 
 3. Sorting 
 4. Rating Breakdown
