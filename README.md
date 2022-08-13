@@ -2,13 +2,15 @@
 #### 
 Our outdated client-facing retail web-portal has become significantly outdated and has been proven to be hurting sales numbers. Project Atelier comprises a complete redesign of the retail portal designed to address this concern and modernize the site. Our team built a complex webpage that interacts with an API, server, and four widgets made by four different people while being thoroughly tested to ensure the best outcome. We had the oppurtunity to use some technologies including React, Jest, HTML, CSS, Axios, Express and, hopefully to no suprise, Javascript!
 
-Our team was made up of:
+Our project includes the following modules:
 
-Slava Starikov, responsible for Product Overview.
-</br>
-Xinxin Li, responsible for Related Products & Comparisons and Ratings & Reviews.
-</br>
-Tam Tran, responsible for Question & Answers.
+<a href='#product-overview'> Product Overview</a> -created by Slava Starikov
+
+<a href='#related-items-and-outfit-creation'> Related Items & Outfit Creation</a>  -created by Xinxin Li
+
+<a href='#questions-and-answers'> Questions and Answers</a>  -created by Tam Tran
+
+<a href='#ratings-and-reviews'> Ratings and Reviews</a> -created by Xinxin Li
 
 ## Description
 ### Product Overview:
@@ -19,7 +21,7 @@ It has 4 main parts:
 4. Add to Cart: Two dropdowns that allow the user to select the size and quantity of the item to add to their cart. The options available within these dropdowns will vary based on the selected product style.
   
   
-### Related Items & Outfit Creation:
+### Related Items And Outfit Creation:
 It has 2 main parts:
 1. Related products: 
     - This component displays a carousel of product cards that are related to the product currently being viewed. 
@@ -37,7 +39,7 @@ It has 2 main parts:
 
    ![yourOutfit](https://user-images.githubusercontent.com/84343573/184466186-47cc808c-83fa-4b9d-b63a-3f0b5e9ca770.gif)
 
-### Ratings & Reviews: 
+### Ratings and Reviews: 
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected. It has 5 main parts:
 1. Reviews List: 
     - It displays a list of all the reviews that have been submitted for the product being viewed. By default, the list only display 2 product tiles at a time. By clicking "More Reviews" button to load more reviews. 
