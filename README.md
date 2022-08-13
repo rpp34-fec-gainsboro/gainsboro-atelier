@@ -5,7 +5,9 @@ Our outdated client-facing retail web-portal has become significantly outdated a
 Our team was made up of:
 
 Slava Starikov, responsible for Product Overview.
+</br>
 Xinxin Li, responsible for Related Products & Comparisons and Ratings & Reviews.
+</br>
 Tam Tran, responsible for Question & Answers.
 
 ## Description
@@ -58,8 +60,7 @@ The Ratings & Reviews module will allow viewing and submission of reviews for th
 ![keyword](https://user-images.githubusercontent.com/84343573/184466833-105b16a3-ea5c-480e-b66b-25cdc27e300d.gif)
 
 
-# Setup
-
+## Installation
 1. Create a file `config.js` file. Make sure to add it to your `.gitignore`
 2. Create a cloudinary token (for image uploading)
 3. Below is the need format for the `config.js` file. `Token` refers to the API token.
