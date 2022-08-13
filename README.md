@@ -34,14 +34,18 @@ The Ratings & Reviews module will allow viewing and submission of reviews for th
     - It displays a list of all the reviews that have been submitted for the product being viewed. By default, the list only display 2 product tiles at a time. By clicking "More Reviews" button to load more reviews. 
     - Each review tile displays the following information: start rating, reviewer name, date, summary, body, recommend, response to review, rating helpfulness.
     - For each review, user can cast a vote for the helpfulness or report a review. User can make one submission for each review. 
-   
+   ![reviews](https://user-images.githubusercontent.com/84343573/184466583-e9d23e6b-b322-41cb-87c9-891925a17af4.gif)
+
 2. Write new review: allow users to submit a new review with photos.
 3. Sorting: users can combine the following options to sort the review list.
     - Sort by sort drop down options: helpful, newest, relevant
     - Sort by star rating
 5. Rating Breakdown: display each of the star ratings that a customer gave to this product.  
 6. Product Breakdown: Feedback for characteristics will be displayed on a 5 point scale.
+![filter_Review](https://user-images.githubusercontent.com/84343573/184466754-5375aa0f-13c8-422d-be16-7c99763a8438.gif)
+
 7. Keyword search: user can filter the reviews for any that contain text matching the search term in the search bar.
+![keyword](https://user-images.githubusercontent.com/84343573/184466833-105b16a3-ea5c-480e-b66b-25cdc27e300d.gif)
 
 
 # Setup
