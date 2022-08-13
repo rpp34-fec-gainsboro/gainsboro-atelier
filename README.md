@@ -37,6 +37,9 @@ The Ratings & Reviews module will allow viewing and submission of reviews for th
    ![reviews](https://user-images.githubusercontent.com/84343573/184466583-e9d23e6b-b322-41cb-87c9-891925a17af4.gif)
 
 2. Write new review: allow users to submit a new review with photos.
+![review 1](https://user-images.githubusercontent.com/84343573/184467216-79a521a2-a6cb-4034-97fb-84a7a22b6282.gif)
+![review 2](https://user-images.githubusercontent.com/84343573/184467233-deb21ae7-e4f1-464b-9b6a-7db0b47eefdc.gif)
+
 3. Sorting: users can combine the following options to sort the review list.
     - Sort by sort drop down options: helpful, newest, relevant
     - Sort by star rating
