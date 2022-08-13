@@ -1,6 +1,6 @@
 # Atelier E-commerce App
 #### 
-Our outdated client-facing retail web-portal has become significantly outdated and has been proven to be hurting sales numbers. Project Atelier comprises a complete redesign of the retail portal designed to address this concern and modernize the site. Our team built a complex webpage that interacts with an API, server, and four widgets made by four different people while being thoroughly tested to ensure the best outcome. We had the oppurtunity to use some technologies including React, Jest, HTML, CSS, Axios, Express and, hopefully to no suprise, Javascript!
+Our outdated client-facing retail web-portal has become significantly outdated and has been proven to be hurting sales numbers. Project Atelier comprises a complete redesign of the retail portal designed to address this concern and modernize the site. Our team built a complex webpage that interacts with an API, server, and four widgets made by four different people while being thoroughly tested to ensure the best outcome. We had the oppurtunity to use some technologies including React, HTML, styled-components, Axios, and Express, hopefully to no suprise, Javascript!
 
 Our project includes the following modules:
 
