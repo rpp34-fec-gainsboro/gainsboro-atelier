@@ -39,6 +39,12 @@ It has 2 main parts:
 
    ![yourOutfit](https://user-images.githubusercontent.com/84343573/184466186-47cc808c-83fa-4b9d-b63a-3f0b5e9ca770.gif)
 
+### Questions and Answers:
+Users can find an existing question, post new questions or answers to any questions related to a product. 
+1. Search: The Search bar allows users to look up any questions that contain the keywords.
+2. Questions: Users can view the contents of the question and its answers. Also they can vote the helpfulness of the question or report the inappropriate questions. 
+3. Answers: Users can post answers by clicking the "add answer" button on each question
+
 ### Ratings and Reviews: 
 The Ratings & Reviews module will allow viewing and submission of reviews for the product selected. It has 5 main parts:
 1. Reviews List: 
